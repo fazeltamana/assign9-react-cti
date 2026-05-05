@@ -1,16 +1,140 @@
-# React + Vite
+# 🛍️ Denis Store — Product Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+Denis Store is a modern product store application built with React.
+The app demonstrates practical usage of **Context API, useReducer, Redux Toolkit, and React Query** by combining them into a single scalable project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users can browse products, search and filter them, view details, and manage a shopping cart with a smooth UI experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🧠 State Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Context API + useReducer for global UI settings
+
+  * Dark / Light theme
+  * Product filtering (category, search, sort)
+* Redux Toolkit for cart management
+
+  * Add / remove items
+  * Increase / decrease quantity
+  * Clear cart
+  * Total items & total price
+
+### 🌐 Data Fetching
+
+* React Query for API handling
+
+  * Fetch product list from API
+  * Caching and optimized re-fetching
+  * Loading and error states
+
+### 🛒 Shopping Experience
+
+* Product listing with filtering and sorting
+* Product details page
+* Cart drawer + full cart page
+* Fake checkout page
+
+### 🎨 UI & UX
+
+* Responsive modern UI (Tailwind CSS)
+* Dark / Light mode support
+* Smooth transitions and hover effects
+* Clean component-based structure
+
+---
+
+## 🧱 Tech Stack
+
+* **React (Functional Components)**
+* **Redux Toolkit**
+* **React Query (@tanstack/react-query)**
+* **Context API + useReducer**
+* **React Router**
+* **Tailwind CSS**
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── app/                # Redux store
+ ├── features/
+ │    └── cart/         # Cart slice (Redux Toolkit)
+ ├── context/           # Context + useReducer (settings)
+ ├── components/        # Reusable UI components
+ ├── pages/             # App pages (Home, Cart, etc.)
+ ├── services/          # API logic (React Query)
+ └── App.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-link>
+cd your-project
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 API Used
+
+* Fake Store API
+  https://fakestoreapi.com/products
+
+---
+
+## 📸 Demo Link
+
+> Demo linK: 
+https://github.com/user-attachments/assets/4fcf4258-a439-40ed-b437-88a0f73564af
+
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Separation of concerns in state management
+* Efficient API handling with React Query
+* Scalable global state using Redux Toolkit
+* Clean UI state management using Context + useReducer
+* Component-based UI architecture
+
+---
+
+## 🔮 Future Improvements
+
+* Real checkout integration
+* User authentication
+* Product reviews & ratings
+* Pagination / infinite scroll
+* Wishlist feature
+
+---
+
+## 📄 License
+
+This project is for educational purposes.
